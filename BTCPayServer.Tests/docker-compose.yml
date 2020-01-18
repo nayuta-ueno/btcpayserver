@@ -43,13 +43,9 @@ services:
     image: alpine:3.7
     command: [ "/bin/sh", "-c", "trap : TERM INT; while :; do echo Ready to code and debug like a rockstar!!!; sleep 2073600; done & wait" ]
     links:
-      - nbxplorer
       - postgres
       - customer_lightningd
       - merchant_lightningd
-      - lightning-charged
-      - customer_lnd
-      - merchant_lnd
       - sshd
 
   sshd:
@@ -71,7 +67,6 @@ services:
         deprecatedrpc=signrawtransaction
         connect=bitcoind:39388
     links:
-      - nbxplorer
       - postgres
       - customer_lnd
       - merchant_lnd
