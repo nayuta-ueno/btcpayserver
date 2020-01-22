@@ -8,7 +8,7 @@
                 "BTCPAY_LAUNCHSETTINGS": "true",
                 "BTCPAY_BUNDLEJSCSS": "false",
                 "BTCPAY_LTCEXPLORERURL": "http://127.0.0.1:32838/",
-                "BTCPAY_LBTCLIGHTNING": "type=clightning;server=unix:///home/ueno/LN/lightning/LIQREG/liquidregtest/lightning-rpc",
+                "BTCPAY_LBTCLIGHTNING": "type=clightning;server=unix:///home/ueno/Elements/lightning/LIQREG/liquidregtest/lightning-rpc",
                 "BTCPAY_BTCEXTERNALLNDGRPC": "type=lnd-grpc;server=https://lnd:lnd@127.0.0.1:53280/;allowinsecure=true",
                 "BTCPAY_BTCEXTERNALLNDREST": "type=lnd-rest;server=https://lnd:lnd@127.0.0.1:53280/lnd-rest/btc/;allowinsecure=true;macaroonfilepath=D:\\admin.macaroon",
                 "BTCPAY_BTCEXTERNALLNDSEEDBACKUP": "../BTCPayServer.Tests/TestData/LndSeedBackup/walletunlock.json",
@@ -21,7 +21,7 @@
                 "BTCPAY_DEBUGLOG": "debug.log",
                 "BTCPAY_TORRCFILE": "../BTCPayServer.Tests/TestData/Tor/torrc"
             },
-            "applicationUrl": "http://127.0.0.1:14142/"
+            "applicationUrl": "http://10.0.1.80:14142/"
         },
         "Docker-Regtest-https": {
             "commandName": "Project",
